@@ -3,7 +3,7 @@ const path = require("path");
 const port = process.env.PORT || 3000;
 const app = express();
 
-app.use("/assets",express.static(path.join(__dirname, "assests")));
+app.use("/assets", express.static(path.join(__dirname, "assets")));
 
 app.get("*", function (req, res) {
   const page = req.params[0].substr(1) || 'index';
