@@ -1,12 +1,10 @@
-:root{
-    --primary:#6f28d9;
-    --secondary:#e11d48;
-    --theme:#f8f8f8;
-    --contrast-theme:#111827;
-
-/*lenguages vcolor*/
---html:#f97316;
---js:#fbbf24;
---css:#38bdf8;
-    
+:root {
+    --primary: #6f28d9;
+    --secondary: #e11d48;
+    --theme: #f8f8f8;
+    --contrast-theme: #111827;
+    /*lenguages color*/
+    --html: #f97316;
+    --js: #fbbf24;
+    --css: #38bdf8;
 }

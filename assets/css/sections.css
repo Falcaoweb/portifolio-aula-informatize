@@ -1,2 +1,6 @@
 @import './sections/welcome.css';
 @import './sections/skills.css';
+@import 'sections/projects.css';
+@import 'sections/about-me.css';
+@import 'sections/contact-me.css';
+@import './footer.copyright.css';

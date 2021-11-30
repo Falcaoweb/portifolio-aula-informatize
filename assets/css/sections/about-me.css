@@ -1,0 +1,18 @@
+.section-page.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.section-page.about-me>h1 {
+    padding: 1rem;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.section-page.about-me>p {
+    color: var(--theme);
+    text-align: justify;
+}
