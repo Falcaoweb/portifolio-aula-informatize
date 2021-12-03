@@ -23,7 +23,7 @@
     display: grid;
     grid-template-columns: 3rem 1fr;
     align-items: center;
-    gap: .5rem;
+    gap: 0.5rem;
     text-decoration: none;
     transition: all 300ms;
 }
@@ -31,3 +31,48 @@
 .section-page.contact-me>.contact-me-wrapper a:hover {
     color: var(--primary);
 }
+
+
+/* #region min 415px */
+
+@media screen and (min-width: 415px) {
+    .section-page.contact-me>h3 {
+        font-size: 3rem;
+    }
+    .section-page.about-me>p {
+        font-size: 2rem;
+    }
+    .section-page.contact-me>.contact-me-wrapper {
+        grid-template-rows: repeat(3, 8rem);
+    }
+    .section-page.contact-me>.contact-me-wrapper>a {
+        font-size: 4rem;
+        grid-template-columns: 4rem 1fr;
+        gap: 2rem;
+    }
+}
+
+
+/* #endregion */
+
+
+/* #region min 769px */
+
+@media screen and (min-width: 769px) {
+    .section-page.contact-me>h3 {
+        font-size: 3rem;
+    }
+    .section-page.contact-me>.contact-me-wrapper {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto;
+        gap: 3rem;
+    }
+    .section-page.contact-me>.contact-me-wrapper>a {
+        font-size: 3rem;
+        grid-template-columns: 3rem 1fr;
+        grid-area: 1rem;
+    }
+}
+
+
+/* #endregion */

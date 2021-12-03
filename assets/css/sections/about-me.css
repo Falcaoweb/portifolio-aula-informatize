@@ -16,3 +16,19 @@
     color: var(--theme);
     text-align: justify;
 }
+
+
+/* #region min 415px */
+
+@media screen and (min-width: 415px) {
+    .section-page.about-me {
+        font-size: 3rem;
+        padding: 3rem;
+    }
+    .section-page.about-me>p {
+        font-size: 2rem;
+    }
+}
+
+
+/* #endregion */
