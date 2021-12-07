@@ -1,22 +1,51 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
-
-@import "./theme.css";
-@import "./reset.css";
-@import "./header.menu.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import './theme.css';
+@import './reset.css';
+@import './header.menu.css';
+body>.hidden {
+    display: none !important;
+}
 
 .section-page {
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
+
 .section-page.theme {
-  background: var(--theme);
+    background: var(--theme);
 }
+
 .section-page.contrast-theme {
-  background: var(--contrast-theme);
+    background: var(--contrast-theme);
 }
+
 .section-page.primary {
-  background: var(--primary);
+    background: var(--primary);
 }
+
 .section-page.secondary {
-  background: var(--secondary);
+    background: var(--secondary);
+}
+
+.loading-container {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    background: var(--secondary);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--theme);
+}
+
+.loading-container.active {
+    display: flex;
+}
+
+.loading-container.active span {
+    display: inline-block;
 }

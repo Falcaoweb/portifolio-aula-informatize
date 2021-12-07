@@ -12,12 +12,27 @@
 
     <script src="/assets/icons/brands.min.js" defer></script>
     <script src="/assets/icons/fontawesome.min.js" defer></script>
+    <script src="/assets/js/anime.min.js"></script>
+    <script src="/assets/js/main.js" defer></script>
 </head>
 
 <body>
+    <div id="loading" class="loading-container active">
+        <div class="loading-wrapper">
+            <span>L</span>
+            <span>o</span>
+            <span>a</span>
+            <span>d</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>
+        </div>
+    </div>
+
+
     <header class="header-menu"></header>
 
-    <section id="welcome" class="section-page theme welcome">
+    <section id="welcome" class="section-page theme welcome hidden">
         <h1 id="desenvolve">José Francisco da Silva Falcão</h1>
         <h3>Estudante em desenvolvimento web</h3>
         <figure>
@@ -25,7 +40,7 @@
         </figure>
     </section>
 
-    <section id="skills" class="section-page secondary skills">
+    <section id="skills" class="section-page secondary skills hidden">
         <div class="skill-wrapper">
             <!-- #region modelo skill -->
             <figure class="skill-item html">
@@ -81,7 +96,7 @@
         </div>
     </section>
 
-    <section id="projects" class="section-page theme projects">
+    <section id="projects" class="section-page theme projects hidden">
         <div class="projects-wrapper">
             <a href="#">
                 <figure>
@@ -113,7 +128,7 @@
         </div>
     </section>
 
-    <section id="about-me" class="section-page contrast-theme about-me">
+    <section id="about-me" class="section-page contrast-theme about-me hidden">
         <h1>Jose falcao</h1>
         <p>
             Estudante em desenvolvimento web buscando mais conhecimentos e aprimoramentos. Em HTML, CSS, JS.
@@ -132,7 +147,7 @@
         </p>
     </section>
 
-    <section id="contacte-me" class="section-page theme contact-me">
+    <section id="contacte-me" class="section-page theme contact-me hidden">
         <h3>contact-me</h3>
         <div class="contact-me-wrapper">
             <a href="https://www.facebook.com/falcao.fal/" target="_blank">
@@ -153,7 +168,7 @@
             </a>
         </div>
     </section>
-    <footer class="copyright" id="direitos">
+    <footer class="copyright hidden" id="direitos">
         <h1><a href="#desenvolve">desenvolvedorweb</a></h1>
         <strong id="all-right-since">2021-2021 </strong> &copy;
         <span>todos direitos reservados jose falcao</span>
